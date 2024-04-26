@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Safety Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        #predictionResult {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        
+        #extractedFeatures {
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: left;
+        }
+        
+        .suspicious {
+            color: #ff0000;
+        }
+        
+        .safe {
+            color: #008000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" style="background-color: #FEFAF6; padding: 20px; border-radius: 10px; width: 300px;">
+        <h1 style="color: #102C57; font-size: 28px; font-weight: bold;">Website Safety Checker</h1>
+        <div style="margin-top: 20px;">
+            <button id="checkSafety" style="padding: 10px 20px; background-color: #102C57; color: #FEFAF6; border: none; cursor: pointer; border-radius: 5px; font-size: 16px;">
+                <span id="buttonText">Check Safety</span>
+                <span id="loading" style="display: none;"><img src="loading.gif" alt="Loading" style="width: 20px; vertical-align: middle;"></span>
+            </button>
+        </div>
+        <div id="predictionResult" style="margin-top: 20px; font-size: 18px;"></div>
+        <!-- This is the element for displaying the prediction result -->
+        <div id="extractedFeatures"></div>
+        <!-- This is the element for displaying the extracted features -->
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

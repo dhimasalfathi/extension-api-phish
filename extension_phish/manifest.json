@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Website Safety Checker",
+    "version": "1.0",
+    "description": "Check if a website is safe or suspicious.",
+    "permissions": [
+        "activeTab"
+    ],
+    "action": {
+        "default_icon": "icon-48.png",
+        "default_popup": "popup.html"
+    }
+}
